@@ -6,7 +6,7 @@
 // In order to run:
 //   npm install canvas # please do not check it in
 //   npm run build-node
-//   node build/static/js/build-node.js
+//   node build/static/js/build-node.js to test
 //   open test.png
 
 var rewire = require("rewire");
