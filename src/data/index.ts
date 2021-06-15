@@ -367,7 +367,7 @@ export async function exportCanvas(
 export async function loadScene(id: string | null, privateKey?: string) {
   let data;
   if (id != null) {
-    // the private key is used to decrypt the content from the server, take
+    // the private key is used to decrypt the content from the server, take myfile
     // extra care not to leak it
     data = await importFromBackend(id, privateKey);
     window.history.replaceState({}, "Excalidraw", window.location.origin);
