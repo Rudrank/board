@@ -37,6 +37,7 @@ export const actionPasteStyles = register({
     return {
       elements: elements.map((element) => {
         if (appState.selectedElementIds[element.id]) {
+          console.log("test");
           const newElement = newElementWith(element, {
             backgroundColor: pastedElement?.backgroundColor,
             strokeWidth: pastedElement?.strokeWidth,
